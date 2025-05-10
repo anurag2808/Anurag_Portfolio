@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  h1, h2 {
+    color: #0f52ba;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  .center-text {
+    text-align: center;
+  }
+  .tagline {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+  }
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  .profile-img:hover {
+    transform: scale(1.05);
+  }
+  .bio-section, .skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    gap: 20px;
+  }
+  .bio, .skills-grid {
+    flex: 1;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  .projects ul, .achievements ul, .education ul,
+  .soft-skills ul, .hobbies ul {
+    padding-left: 20px;
+  }
+  .projects li, .achievements li, .education li,
+  .soft-skills li, .hobbies li {
+    margin-bottom: 8px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .social-links {
+    margin-top: 15px;
+  }
+  .button {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+  .github-btn {
+    background: #24292e;
+    color: #fff;
+  }
+  .github-btn:hover {
+    background: #333;
+    transform: scale(1.05);
+  }
+  .linkedin-btn {
+    background: #0077b5;
+    color: #fff;
+  }
+  .linkedin-btn:hover {
+    background: #005983;
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  @keyframes slideInLeft {
+    from {transform: translateX(-50px); opacity: 0;}
+    to {transform: translateX(0); opacity: 1;}
+  }
+  @keyframes slideInRight {
+    from {transform: translateX(50px); opacity: 0;}
+    to {transform: translateX(0); opacity: 1;}
+  }
+  .fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+  .slide-in-left {
+    animation: slideInLeft 1s ease-out;
+  }
+  .slide-in-right {
+    animation: slideInRight 1s ease-out;
+  }
+  
+  /* Table Styling */
+  .table-wrapper {
+    overflow-x: auto;
+    margin-top: 15px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  th {
+    background-color: #0f52ba;
+    color: white;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #e0ebff;
+  }
+
+  @media (max-width: 768px) {
+    .bio-section, .skills-section {
+      flex-direction: column;
+      text-align: center;
+    }
+    .profile-img {
+      margin: 0 auto 20px;
+    }
+  }
+#darkModeToggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #0f52ba;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  #darkModeToggle:hover {
+    background-color: #333;
+  }
+  
+.dark-mode {
+    background: #121212;
+    color: #eaeaea;
+  }
+  
+  .dark-mode .container {
+    background: #1f1f1f;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dark-mode h1, .dark-mode h2 {
+    color: #8ab4f8;
+  }
+  
+  .dark-mode .profile-img {
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  .dark-mode footer {
+    color: #bbb;
+  }
+  
+  .dark-mode .button {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode .github-btn {
+    background: #24292e;
+  }
+  
+  .dark-mode .linkedin-btn {
+    background: #005983;
+  }
+  
+  .dark-mode .table-wrapper {
+    background-color: #333;
+  }
+  
+  .dark-mode table {
+    background-color: #222;
+    border: 1px solid #444;
+  }
+  
+  .dark-mode th {
+    background-color: #1a1a1a;
+    color: #ddd;
+  }
+  
+  .dark-mode tr:nth-child(even) {
+    background-color: #2c2c2c;
+  }
+  
+  .dark-mode tr:hover {
+    background-color: #444;
+  }
+  

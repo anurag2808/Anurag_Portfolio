@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anurag Banerjee | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="fade-in center-text">Anurag Banerjee</h1>
+      <p class="tagline center-text">Computer Science Student | Innovator | Tech Enthusiast</p>
+      <button id="darkModeToggle" class="button">🌙 Dark Mode</button>
+    </header>
+    <section class="bio-section slide-in-left">
+      <img src="Anurag picture.jpg" alt="Profile Photo" class="profile-img" />
+      <div class="bio">
+        <h2>About Me</h2>
+        <p>
+          I'm a third-year Computer Science Engineering student at MIT World Peace University, Pune, with a passion for innovation, AI, and real-world tech applications. I thrive in collaborative environments, lead with purpose, and continuously aim to bridge the gap between ideas and execution.
+        </p>
+      </div>
+    </section>
+    <section class="skills-section slide-in-right">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Languages</h3>
+          <p>Python, C/C++, SQL</p>
+        </div>
+        <div>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, React (Basics)</p>
+        </div>
+        <div>
+          <h3>Databases</h3>
+          <p>MySQL, MongoDB, Cassandra</p>
+        </div>
+        <div>
+          <h3>Tools & Technologies</h3>
+          <p>Git/GitHub, Docker</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects fade-in">
+      <h2>Projects & Experience</h2>
+      <ul>
+        <li><strong>Crop Prediction</strong> - ML Project | <a href="https://github.com/anurag2808" target="_blank">GitHub</a></li>
+        <li><strong>Drug to Drug Interaction</strong> - ML Project | <a href="https://github.com/anurag2808" target="_blank">GitHub</a></li>
+        <li><strong>Connect 4 Game (AI with GUI)</strong> - Python (Pygame) | <a href="https://github.com/anurag2808" target="_blank">GitHub</a></li>
+        <li><strong>Stock Trend Prediction</strong> - Full Stack with Cassandra | <a href="https://github.com/anurag2808" target="_blank">GitHub</a></li>
+        <li><strong>IoT:</strong> VLC Morse Code, Solar Water Heater Regulator</li>
+      </ul>
+    </section>
+    <section class="achievements slide-in-left">
+      <h2>Achievements & Contributions</h2>
+      <ul>
+        <li><strong>Vice Head</strong>, CSI Student Chapter (2023-24)</li>
+        <li><strong>Gold Medallion</strong>, DAV MUN 2021</li>
+        <li><strong>Finalist</strong>, Hack MIT 2024 & 2025</li>
+        <li><strong>Patent:</strong> “<em>AI-Driven Synonym-Based Search Enhancing Technical Document Insights</em>” — Improves document search relevance using synonym-matching algorithms powered by AI, helping engineers and researchers quickly locate related concepts.</li>
+        <li><strong>Research Paper:</strong> “<em>AI/ML-driven decision making in business analytics for the Financial Sector using Ensemble Machine Learning Techniques</em>” — Demonstrates how Random Forests and Gradient Boosting can enhance predictive performance in stock and risk analysis.</li>
+      </ul>
+    </section>
+    <section class="education slide-in-right">
+      <h2>Education</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Examination</th>
+              <th>Institution</th>
+              <th>Score</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>B.Tech CSE</td>
+              <td>MIT World Peace University</td>
+              <td>7.52</td>
+              <td>2026</td>
+            </tr>
+            <tr>
+              <td>Class XII</td>
+              <td>D.A.V International School, Kharghar</td>
+              <td>73%</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Class X</td>
+              <td>D.A.V International School, Kharghar</td>
+              <td>87%</td>
+              <td>2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="soft-skills slide-in-left">
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Strong communication and persuasive skills</li>
+        <li>Adaptable and agile team player</li>
+        <li>Proactive leader, committed to guiding teams toward success</li>
+      </ul>
+    </section>
+    <section class="hobbies slide-in-right">
+      <h2>Hobbies & Interests</h2>
+      <ul>
+        <li>Public Speaking</li>
+        <li>Exploring new technologies</li>
+        <li>Watching Documentaries</li>
+        <li>Reading Self Development Books</li>
+      </ul>
+    </section>
+    <footer class="fade-in">
+      <h2>Contact & Connect</h2>
+      <p>📍 Pune, Maharashtra</p>
+      <p>📞 +91 7715826500 | 📧 anuragbanerjee2004@gmail.com</p>
+      <div class="social-links">
+        <a class="button github-btn" href="https://github.com/anurag2808" target="_blank">
+          <img src="github.svg" alt="GitHub" style="height: 50px; vertical-align: middle; margin-right: 8px;">
+          GitHub
+        </a>
+        <a class="button linkedin-btn" href="https://linkedin.com/in/anurag-banerjee-3577482a9" target="_blank">
+          <img src="linkedin.svg" alt="LinkedIn" style="height: 50px; vertical-align: middle; margin-right: 8px;">
+          LinkedIn
+        </a>
+        
+      </div>
+    </footer>
+  </div>
+  <script>
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    darkModeToggle.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      if (body.classList.contains("dark-mode")) {
+        darkModeToggle.textContent = "☀️ Light Mode";
+      } else {
+        darkModeToggle.textContent = "🌙 Dark Mode";
+      }
+    });
+  </script>
+</body>
+</html>
