@@ -124,8 +124,6 @@
   .slide-in-right {
     animation: slideInRight 1s ease-out;
   }
-  
-  /* Table Styling */
   .table-wrapper {
     overflow-x: auto;
     margin-top: 15px;
